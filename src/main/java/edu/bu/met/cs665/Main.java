@@ -9,6 +9,8 @@
 package edu.bu.met.cs665;
 
 
+import edu.bu.met.cs665.factory.EmailGenerator;
+
 /**
  * This is the Main class.
  */
@@ -21,7 +23,12 @@ public class Main {
    * However, please note that every assignment/final projects requires JUnit tests.
    */
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
+    EmailGenerator emailGenerator = new EmailGenerator();
+    System.out.println(emailGenerator.generateEmail("Business"));
+    System.out.println(emailGenerator.generateEmail("Frequent"));
+    System.out.println(emailGenerator.generateEmail("New"));
+    System.out.println(emailGenerator.generateEmail("Returning"));
+    System.out.println(emailGenerator.generateEmail("VIP"));
   }
 
 }
