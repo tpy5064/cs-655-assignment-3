@@ -1,30 +1,29 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Tianqi Yang                |
+| Date         | 10/30/2023                 |
+| Course       | Fall                       |
+| Assignment # | 3                          |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/tpy5064/cs-655-assignment-3
 
 # Implementation Description 
 
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
-
+- By using the factory pattern, I am able to allow new types to be added simply by implementing the Email interface,
+and adding a new switch-case in the Email generator class.
+- The readability of the program is high because the structure is fairly simple, by creating instances of the class
+via a switch case, allowing users to understand the functionality of the code without going through multiple files.
+- This implementation decreases the complexity for the user, as the user no longer has to invoke multiple
+different classes and create instances of objects throughout the code, as one single EmailGenerator object is able
+to handle a multiplex of email types and increases readability.
 
 # Maven Commands
 
