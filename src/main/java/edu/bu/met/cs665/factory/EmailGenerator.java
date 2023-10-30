@@ -1,6 +1,14 @@
+/**
+ * Name: Tianqi Yang
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/30/2023
+ * File Name: EmailGenerator.java
+ * Description: The factory that generates the email by determining the type passed in via the generateEmail method.
+ */
+
+
 package edu.bu.met.cs665.factory;
 
-import edu.bu.met.cs665.factory.Email;
 
 public class EmailGenerator{
 

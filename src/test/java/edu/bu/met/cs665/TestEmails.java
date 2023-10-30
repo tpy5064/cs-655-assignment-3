@@ -1,6 +1,15 @@
-package edu.bu.met.cs665;
+/**
+ * Name: Tianqi Yang
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/30/2023
+ * File Name: TestEmails.java
+ * Description: Test class that tests the functionality of the program.
+ */
 
+
+package edu.bu.met.cs665;
 import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.assertNull;
 
 import edu.bu.met.cs665.factory.EmailGenerator;
@@ -11,6 +20,7 @@ public class TestEmails {
     public TestEmails() {
     }
 
+    //These first 5 tests essentially tests if the values produced are as expected.
     @Test
     public void testBusinessEmailOutput() {
         EmailGenerator emailGenerator = new EmailGenerator();
@@ -61,6 +71,7 @@ public class TestEmails {
         assertEquals(desiredOuptut, emailGenerator.generateEmail("VIP"));
     }
 
+    //This tests if a null output is correctly created by the EmailGenerator class if an invalid type is inputted.
     @Test
     public void testInvalidEmailType() {
         EmailGenerator emailGenerator = new EmailGenerator();

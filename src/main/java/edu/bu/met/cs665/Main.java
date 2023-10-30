@@ -16,19 +16,16 @@ import edu.bu.met.cs665.factory.EmailGenerator;
  */
 public class Main {
 
-  /**
-   * A main method to run examples.
-   * You may use this method for development purposes as you start building your
-   * assignments/final project.  This could prove convenient to test as you are developing.
-   * However, please note that every assignment/final projects requires JUnit tests.
-   */
   public static void main(String[] args) {
     EmailGenerator emailGenerator = new EmailGenerator();
-    System.out.println(emailGenerator.generateEmail("Business"));
-    System.out.println(emailGenerator.generateEmail("Frequent"));
-    System.out.println(emailGenerator.generateEmail("New"));
-    System.out.println(emailGenerator.generateEmail("Returning"));
-    System.out.println(emailGenerator.generateEmail("VIP"));
+    String[] emailTypes = {"Business", "Frequent", "New", "Returning", "VIP"};
+    for (String type : emailTypes) {
+      String output = emailGenerator.generateEmail(type);
+      //Ensure correct type is expected and do not print null values.
+      if (output != null) {
+        System.out.println(output);
+      }
+    }
   }
 
 }

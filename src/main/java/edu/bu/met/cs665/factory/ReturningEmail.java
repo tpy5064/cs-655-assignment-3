@@ -1,3 +1,13 @@
+/**
+ * Name: Tianqi Yang
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/30/2023
+ * File Name: ReturningEmail.java
+ * Description: The concrete implementation of an email for returning customers. Contains the greeting and body
+ * required for an email targeting returning customers.
+ */
+
+
 package edu.bu.met.cs665.factory;
 
 public class ReturningEmail implements Email {

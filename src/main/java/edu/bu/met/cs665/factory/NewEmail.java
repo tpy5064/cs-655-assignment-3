@@ -1,3 +1,13 @@
+/**
+ * Name: Tianqi Yang
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/30/2023
+ * File Name: NewEmail.java
+ * Description: The concrete implementation of an email for new customers. Contains the greeting and body
+ * required for an email targeted at new customers.
+ */
+
+
 package edu.bu.met.cs665.factory;
 
 public class NewEmail implements Email {
